@@ -17,7 +17,7 @@ exports.handler = async function (event) {
       headers: {
         'Access-Control-Allow-Origin': '*'
       },
-      body: results.rows,
+      body: JSON.stringify(results.rows),
     };
     return response;
 
